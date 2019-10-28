@@ -81,12 +81,12 @@ Worked/bounced ideas around with Julia Maxwell.
 		// You may only change code in the script tag.
 		// You can not change the HTML in the file.
 		var vid = document.getElementById('myVideo');
-		document.querySelector('#volume').innerHTML = vid.volume * 100 + "%";
 
 	function playVid() {
 	console.log("Play Video")
 		// Play the video and update the volume.
 		vid.play()
+		document.querySelector('#volume').innerHTML = vid.volume * 100 + "%";
 	}
 
 	function pauseVid() {
